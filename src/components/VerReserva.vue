@@ -47,7 +47,7 @@
             this.idReserva = this.$route.params.idReserva
             let self = this
       
-            axios.get("http://127.0.0.1:8000/reserva/" + this.idReserva)
+            axios.get("https://hotel-api-grupo13.herokuapp.com/reserva/" + this.idReserva)
                 .then((result) => {
                     self.idReserva = result.data.idReserva
                     self.fechaReserva = result.data.fechaReserva
