@@ -81,7 +81,7 @@
         },
         methods: {
             verReservas(e){
-                this.axios.get("http://127.0.0.1:8000/perfil/reservas/" + localStorage.getItem('currentEmail'))
+                this.axios.get("https://hotel-api-grupo13.herokuapp.com/perfil/reservas/" + localStorage.getItem('currentEmail'))
                 .then((result)=>{
                     //this.posts.detalles = JSON.stringify(result.data)
                     //window.location("../reserva/hacerReserva")
@@ -102,7 +102,7 @@
                 e.preventDefault();
             },
             verDatos(e){
-                this.axios.get("http://127.0.0.1:8000/usuarios/" + localStorage.getItem('currentEmail'))
+                this.axios.get("https://hotel-api-grupo13.herokuapp.com/usuarios/" + localStorage.getItem('currentEmail'))
                 .then((result)=>{
                     this.datosUser.nombres = result.data.nombres
                     this.datosUser.apellidos = result.data.apellidos
