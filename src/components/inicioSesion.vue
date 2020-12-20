@@ -32,7 +32,7 @@
         },
         methods: {
             doLogin(e){
-                this.axios.post("http://127.0.0.1:8000/usuarios/auth/", this.datosUser)
+                this.axios.post("https://hotel-api-grupo13.herokuapp.com/usuarios/auth/", this.datosUser)
                 .then((result)=>{
                     //this.posts.detalles = JSON.stringify(result.data)
                     //window.location("../reserva/hacerReserva")
