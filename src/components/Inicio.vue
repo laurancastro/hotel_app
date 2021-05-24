@@ -1,7 +1,7 @@
 <template>
     <div  id="myForm">
         <form @submit="postData" method="POST">
-          <h3>Anteasds de reservar: Comprueba la disponibilidad. </h3>
+          <h3>Antes de reservar: Comprueba la disponibilidad. </h3>
 
           <label for="fechaLlegada">Fecha de llegada: </label>
             <input type="date" name="fechaLlegada" id="fechaLlegada" value='2021-01-01' 
