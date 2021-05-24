@@ -115,7 +115,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items:  center;
-    font-size: 2rem;
+    font-size: 20px;
   }
   .header nav button{
     color: #333333;
