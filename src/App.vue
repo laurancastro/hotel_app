@@ -86,14 +86,6 @@ export default {
 
 <style>
 
-* { box-sizing: border-box;
-	margin: 0; 
-	padding: 0;
-}
-
-html  {
-	font-size:  62.5%;
-
  body {
     margin: 0 0 0 0;
     background-color: #e5e5e5;
