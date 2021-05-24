@@ -6,7 +6,6 @@
           <img src="./assets/Logo-hotel.png">
         </a>
       </h1>
-      
       <nav>
         <form>
           <input type="text" placeholder="Id de reserva" name="idReserva" 
@@ -86,13 +85,20 @@ export default {
 </script>
 
 <style>
-  body{
+
+* { box-sizing: border-box;
+	margin: 0; 
+	padding: 0;
+}
+
+html  {
+	font-size:  62.5%;
+
+ body {
     margin: 0 0 0 0;
     background-color: #e5e5e5;
   }
   .header{
-    margin: 0%;
-    padding: 0;
     width: 100%;
     height: 10vh;
     min-height: 100px;
@@ -109,7 +115,6 @@ export default {
     text-align: center;
     color: black;
   }
-
   
   .header nav {
     height: 100%;
@@ -118,7 +123,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items:  center;
-    font-size: 20px;
+    font-size: 2rem;
   }
   .header nav button{
     color: #333333;
@@ -134,11 +139,13 @@ export default {
     border: 1px solid  #2f8ca3b0;
   }
   .main-component{
+   display:flex; 
+    flex-wrap: wrap;	
     height: 75vh;
-    width: 1190;
+    width: 100%;
     margin: 0%;
     padding: 0%; 
-    background-image: url('./assets/hotel_fondo.jpeg');
+    background-image: url('./assets/hotel_fondo.jpg');
      background-position: center;
      background-size:cover;
   }
@@ -159,7 +166,7 @@ export default {
     align-items: center;
     text-align: center;
     font-family: "Helvetica" ;
-    font-size: 80%;
+    font-size: 1.8rem;
     color: #2f8ca3b0;
   }
 
@@ -178,4 +185,21 @@ export default {
          cursor: pointer;
         font-weight: bold;
   }
+
+ @media (min-width: 600px) {
+	.main-component{
+		width: 50%;
+		}
+	.header nav {
+	height: 100%;
+   	width: 40%;
+
+}
+	}
+	
+@media  (min-width: 800px) {
+	.main-component {
+		width: 800px; 
+		margin-left: auto; 
+		margin-right: auto;
 </style>
