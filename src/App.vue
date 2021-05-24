@@ -85,6 +85,11 @@ export default {
 </script>
 
 <style>
+* {
+	box-sizing: border-box;
+	margin: 0; 
+	padding: 0;
+}
 
  body {
     margin: 0 0 0 0;
@@ -158,7 +163,7 @@ export default {
     align-items: center;
     text-align: center;
     font-family: "Helvetica" ;
-    font-size: 0.9rem;
+    font-size: 1.8rem;
     color: #2f8ca3b0;
   }
 
@@ -180,10 +185,10 @@ export default {
 
  @media (min-width: 600px) {
 	.main-component{
-		width: 80%;
+		width: 50%;
 		}
 	.header nav {
-	height: 98%;
+	height: 100%;
    	width: 40%;
 
 }
