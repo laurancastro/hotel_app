@@ -158,7 +158,7 @@ export default {
     align-items: center;
     text-align: center;
     font-family: "Helvetica" ;
-    font-size: 1.8rem;
+    font-size: 0.9rem;
     color: #2f8ca3b0;
   }
 
@@ -180,10 +180,10 @@ export default {
 
  @media (min-width: 600px) {
 	.main-component{
-		width: 50%;
+		width: 80%;
 		}
 	.header nav {
-	height: 100%;
+	height: 98%;
    	width: 40%;
 
 }
