@@ -191,7 +191,7 @@ export default {
 	
 @media  (min-width: 800px) {
 	.main-component {
-		width: 800px; 
+		width: 100%; 
 		margin-left: auto; 
 		margin-right: auto;}
 		}
