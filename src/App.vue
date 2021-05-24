@@ -115,7 +115,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items:  center;
-    font-size: 20px;
+    font-size: 2rem;
   }
   .header nav button{
     color: #333333;
@@ -193,5 +193,6 @@ export default {
 	.main-component {
 		width: 800px; 
 		margin-left: auto; 
-		margin-right: auto;
+		margin-right: auto;}
+		}
 </style>
