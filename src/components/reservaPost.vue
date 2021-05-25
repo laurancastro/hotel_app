@@ -7,25 +7,33 @@
             <input type="hidden" name="fechaReserva" v-model="posts.fechaReserva">
 
             <section class="fechas">
+           <div>
                 <label for="fechaLlegada">Fecha de llegada: </label>
                     <input type="date" name="fechaLlegada" id="fechaLlegada" value='2021-01-01' 
                     min="2020-12-15" required v-model="posts.fechaLlegada">
+            </div>
+               <div>
                 <label for="FechaSalida">Fecha de salida: </label>
                     <input type="date" name="FechaSalida" id="FechaSalida" value='2021-01-01' 
                     min="2020-12-15" required v-model="posts.fechaSalida">
+               </div>
             </section>
-            <hr>
+         
             
             <section class="tipoHabitacion">
-            <label for="habitacion">Habitacion</label>
-                <select name="habitacion" id="habitacion" v-model="posts.habitacion"> 
-                <option value="Estándar">Estándar</option>
-                <option value="Doble">Doble</option>
-                <option value="Suite">Suite</option>
+              <div>
+                <label for="habitacion">Habitacion</label>
+                    <select name="habitacion" id="habitacion" v-model="posts.habitacion"> 
+                    <option value="Estándar">Estándar</option>
+                    <option value="Doble">Doble</option>
+                    <option value="Suite">Suite</option>
+              
             </select>
+            </div>
             </section>
 
             <section class="personas">
+            <div>
             <label for="numeroPersonas">Número de personas</label>
                 <select name="numeroPersonas" id="numeroPersonas" v-model="posts.numeroPersonas">
                 <option value=1>1</option>
@@ -35,33 +43,43 @@
                 <option value=5>5</option>
                 <option value=6>6</option>
             </select>
+            </div>
             </section>
-            <hr>
+          
             
             <section class="nombre">
+              <div>
                 <label for="nombres">Nombres: </label>
                     <input type="text" name="nombres" id="nombres" pattern="[a-zA-Z]+[a-zA-Z]+{2,30}" 
                     title="Ingrese sólo letras" required v-model="posts.nombres">
+              </div>
             </section>
             <section class="apellido">
+             <div>
                 <label for="apellidos">Apellidos: </label>
                     <input type="text" name="apellidos" id="apellidos" pattern="[a-zA-Z]+[a-zA-Z]+{2,30}" 
                     title="Ingrese sólo letras" required  v-model="posts.apellidos">
+             </div>
             </section>
-            <hr>
+        
 
             <section class="correo">
+               <div>
                 <label for="email">Email: </label>
                     <input type="email" name="email" id="email" required v-model="posts.email">
+               </div>
             </section>
             <section class="nroCelular">
+             <div>
                 <label for="telefono">Celular: </label>
                     <input type="tel" name="telefono" id="telefono" pattern="[0-9]{5,15}" 
                     title="Ingrese sólo números" required v-model="posts.telefono">
+             </div>
             </section>
-            <hr>
+        
 
             <section class="tipoDoc">
+                <div>
                 <label for="tipoDocumento">Tipo de documento: </label>
                     <select name="tipoDocumento" id="tipoDocumento" v-model="posts.tipoDocumento">
                         <option value="CC">CC</option>
@@ -69,15 +87,19 @@
                         <option value="Pasaporte">Pasaporte</option>
                         <option value="Registro Civil">Registro Civil</option>
                     </select>
+                </div>
             </section>
             <section class="documento">
+             <div>
                 <label for="numeroDocumento">Número de documento: </label>
                     <input type="text" name="numeroDocumento" id="numeroDocumento" pattern="[0-9]{5,30}" 
                     title="Ingrese su documento sin puntos ni comas" required v-model="posts.numeroDocumento">
+             </div>
             </section>
-            <hr>
+         
 
             <section class="country">
+                <div>
                 <label for="pais">País: </label>
                     <select id="pais" name="pais" v-model="posts.pais">
                         <option value="Afganistan">Afghanistan</option>
@@ -327,17 +349,22 @@
                         <option value="Zambia">Zambia</option>
                         <option value="Zimbabwe">Zimbabwe</option>
                     </select>
+                </div>
             </section>
             <section class="city">
+               <div>
                 <label for="ciudad">Ciudad: </label>
                     <input type="text" name="ciudad" id="ciudad" pattern="[a-zA-Z]+[a-zA-Z]+{2,30}" 
                     required v-model="posts.ciudad">
+               </div>
             </section>
             <section class="address">
+            <div>
                 <label for="direccion">Dirección: </label>
                     <input type="text" name="direccion" id="direccion" required v-model="posts.direccion">
+            </div>
             </section>
-            <hr>
+          
 
             <section class="submission">
                 <input type="submit" value="Reservar">
@@ -397,9 +424,7 @@
 </script>
 
 <style>
-    #myForm {
-        font-family: "Bahnschrift Light";
-    }
+
 
     input[type=submit]{
         background-color: #2f8ca3b0;
@@ -410,4 +435,54 @@
         cursor: pointer;
         font-weight: bold; 
     }
+     #myForm {
+        font-family: "Bahnschrift Light";     
+        display:flex; 
+        align-items: center;
+        text-align: center;
+    
+    }
+    
+    #myForm h3 {
+        margin-bottom: 15px; 
+    
+    }
+    
+    #myForm form {
+      display: flex; 
+      flex-direction: column;
+      background-color: #f3f3f3d8;
+      padding: 20px;
+    }
+    
+    #myForm form div {
+      display: flex; 
+      justify-content: space-between;
+     
+       padding-top: 5px;
+       padding-bottom: 12px; 
+       border-bottom: 1px solid #9cb7d169;
+       
+      
+    }
+   #myForm form div input, #myForm form select {
+    width: 130px; 
+    
+   }
+   
+   
+    input[type=submit]{
+        background-color: #2f8ca3b0;
+        border: none;
+        color: white;
+        padding: 10px 30px;
+         cursor: pointer;
+        font-weight: bold;
+        width: 130px;
+        margin: 0 auto; 
+       margin-top: 10px;
+  }
+    
+    
+    
 </style>
