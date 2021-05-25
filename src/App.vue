@@ -85,12 +85,6 @@ export default {
 </script>
 
 <style>
-* {
-	box-sizing: border-box;
-	margin: 0; 
-	padding: 0;
-}
-
  body {
     margin: 0 0 0 0;
     background-color: #e5e5e5;
@@ -120,7 +114,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items:  center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .header nav button{
     color: #333333;
@@ -163,7 +157,7 @@ export default {
     align-items: center;
     text-align: center;
     font-family: "Helvetica" ;
-    font-size: 1.8rem;
+    font-size: 1rem;
     color: #2f8ca3b0;
   }
 
